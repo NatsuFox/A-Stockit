@@ -182,42 +182,20 @@ AI 助手会综合展示当前市场状态、自选股表现和决策建议。
 
 ### 📋 工作流概览
 
-```
-┌─────────────────┐
-│  自选股 / 标的   │
-└────────┬────────┘
-         │
-         ▼
-┌──────────────────────────────────────┐
-│  数据准备 (watchlist-import)    │
-│  • 导入自选股                        │
-│  • 获取市场数据                      │
-│  • 同步基本面信息                    │
-└────────┬─────────────────────────────┘
-         │
-         ▼
-┌──────────────────────────────────────┐
-│  市场解读 (market-brief)        │
-│  • 生成行情简报                      │
-│  • 技术指标分析                      │
-│  • 新闻情报整合                      │
-└────────┬─────────────────────────────┘
-         │
-         ▼
-┌──────────────────────────────────────┐
-│  筛选决策 (market-screen)       │
-│  • 多维度筛选                        │
-│  • 决策支持建议                      │
-│  • 策略设计                          │
-└────────┬─────────────────────────────┘
-         │
-         ▼
-┌──────────────────────────────────────┐
-│  历史评估 (backtest-evaluator)  │
-│  • Paper trading                     │
-│  • 回测分析                          │
-│  • 生成报告                          │
-└──────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A[自选股 / 标的] --> B[数据准备<br/>watchlist-import]
+    B --> |• 导入自选股<br/>• 获取市场数据<br/>• 同步基本面信息| C[市场解读<br/>market-brief]
+    C --> |• 生成行情简报<br/>• 技术指标分析<br/>• 新闻情报整合| D[筛选决策<br/>market-screen]
+    D --> |• 多维度筛选<br/>• 决策支持建议<br/>• 策略设计| E[历史评估<br/>backtest-evaluator]
+    E --> |• Paper trading<br/>• 回测分析<br/>• 生成报告| F[决策产物]
+
+    style A fill:#e3f2fd
+    style B fill:#fff3e0
+    style C fill:#f3e5f5
+    style D fill:#e8f5e9
+    style E fill:#fce4ec
+    style F fill:#e1f5ff
 ```
 
 ---
@@ -702,42 +680,20 @@ Your AI assistant will comprehensively display current market status, watchlist 
 
 ### 📋 Workflow Overview
 
-```
-┌─────────────────┐
-│ Watchlist/Tickers│
-└────────┬────────┘
-         │
-         ▼
-┌──────────────────────────────────────┐
-│  Data Prep (watchlist-import)   │
-│  • Import watchlist                  │
-│  • Fetch market data                 │
-│  • Sync fundamentals                 │
-└────────┬─────────────────────────────┘
-         │
-         ▼
-┌──────────────────────────────────────┐
-│  Market Interpretation (brief)  │
-│  • Generate market briefs            │
-│  • Technical indicator analysis      │
-│  • News intelligence integration     │
-└────────┬─────────────────────────────┘
-         │
-         ▼
-┌──────────────────────────────────────┐
-│  Screening & Decisions (screen)│
-│  • Multi-dimensional screening       │
-│  • Decision support recommendations  │
-│  • Strategy design                   │
-└────────┬─────────────────────────────┘
-         │
-         ▼
-┌──────────────────────────────────────┐
-│  Historical Evaluation (backtest)│
-│  • Paper trading                     │
-│  • Backtest analysis                 │
-│  • Generate reports                  │
-└──────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A[Watchlist/Tickers] --> B[Data Prep<br/>watchlist-import]
+    B --> |• Import watchlist<br/>• Fetch market data<br/>• Sync fundamentals| C[Market Interpretation<br/>market-brief]
+    C --> |• Generate market briefs<br/>• Technical indicator analysis<br/>• News intelligence integration| D[Screening & Decisions<br/>market-screen]
+    D --> |• Multi-dimensional screening<br/>• Decision support recommendations<br/>• Strategy design| E[Historical Evaluation<br/>backtest-evaluator]
+    E --> |• Paper trading<br/>• Backtest analysis<br/>• Generate reports| F[Decision Artifacts]
+
+    style A fill:#e3f2fd
+    style B fill:#fff3e0
+    style C fill:#f3e5f5
+    style D fill:#e8f5e9
+    style E fill:#fce4ec
+    style F fill:#e1f5ff
 ```
 
 ---
