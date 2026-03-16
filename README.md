@@ -184,18 +184,18 @@ AI 助手会综合展示当前市场状态、自选股表现和决策建议。
 
 ```mermaid
 flowchart LR
-    A[自选股 / 标的] --> B[数据准备<br/>watchlist-import]
-    B --> C[市场解读<br/>market-brief]
-    C --> D[筛选决策<br/>market-screen]
-    D --> E[历史评估<br/>backtest-evaluator]
-    E --> F[决策产物]
+    A["<b>自选股 / 标的</b>"] --> B["<b>数据准备</b><br/><i>watchlist-import</i>"]
+    B --> C["<b>市场解读</b><br/><i>market-brief</i>"]
+    C --> D["<b>筛选决策</b><br/><i>market-screen</i>"]
+    D --> E["<b>历史评估</b><br/><i>backtest-evaluator</i>"]
+    E --> F["<b>决策产物</b>"]
 
-    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    style B fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style C fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    style D fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
-    style E fill:#fce4ec,stroke:#c2185b,stroke-width:2px
-    style F fill:#e1f5ff,stroke:#0288d1,stroke-width:2px
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#000
+    style B fill:#fff3e0,stroke:#f57c00,stroke-width:3px,color:#000
+    style C fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#000
+    style D fill:#e8f5e9,stroke:#388e3c,stroke-width:3px,color:#000
+    style E fill:#fce4ec,stroke:#c2185b,stroke-width:3px,color:#000
+    style F fill:#e1f5ff,stroke:#0288d1,stroke-width:3px,color:#000
 ```
 
 **工作流说明：**
@@ -688,18 +688,18 @@ Your AI assistant will comprehensively display current market status, watchlist 
 
 ```mermaid
 flowchart LR
-    A[Watchlist/Tickers] --> B[Data Prep<br/>watchlist-import]
-    B --> C[Market Interpretation<br/>market-brief]
-    C --> D[Screening & Decisions<br/>market-screen]
-    D --> E[Historical Evaluation<br/>backtest-evaluator]
-    E --> F[Decision Artifacts]
+    A["<b>Watchlist/Tickers</b>"] --> B["<b>Data Prep</b><br/><i>watchlist-import</i>"]
+    B --> C["<b>Market Interpretation</b><br/><i>market-brief</i>"]
+    C --> D["<b>Screening & Decisions</b><br/><i>market-screen</i>"]
+    D --> E["<b>Historical Evaluation</b><br/><i>backtest-evaluator</i>"]
+    E --> F["<b>Decision Artifacts</b>"]
 
-    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    style B fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    style C fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    style D fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
-    style E fill:#fce4ec,stroke:#c2185b,stroke-width:2px
-    style F fill:#e1f5ff,stroke:#0288d1,stroke-width:2px
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#000
+    style B fill:#fff3e0,stroke:#f57c00,stroke-width:3px,color:#000
+    style C fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#000
+    style D fill:#e8f5e9,stroke:#388e3c,stroke-width:3px,color:#000
+    style E fill:#fce4ec,stroke:#c2185b,stroke-width:3px,color:#000
+    style F fill:#e1f5ff,stroke:#0288d1,stroke-width:3px,color:#000
 ```
 
 **Workflow Details:**
