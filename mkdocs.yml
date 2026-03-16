@@ -1,0 +1,23 @@
+site_name: A-Stockit
+docs_dir: skills/astockit/_docs
+
+nav:
+  - Overview: index.md
+  - Skills:
+      - Catalog: skills/index.md
+  - Runtime:
+      - Overview: runtime/index.md
+      - Entry Scripts: runtime/cli.md
+      - Data: runtime/data.md
+      - Feishu: runtime/feishu.md
+      - Registry: runtime/registry.md
+  - Contracts:
+      - Overview: contracts/index.md
+      - Runtime Interface: contracts/runtime-interface.md
+  - Authoring:
+      - Overview: authoring/index.md
+      - Skill Template: authoring/skill-template.md
+      - Evidence Sufficiency: authoring/evidence-sufficiency.md
+      - Quant Workflow Framework: authoring/quant-workflow-framework.md
+      - Workflow Integration Guide: authoring/workflow-integration-guide.md
+      - Reference Adaptations: authoring/reference-adaptations.md

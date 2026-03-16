@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Environment variables & secrets
+.env
+*.env
+credentials.json
+secrets.json
+*.key
+*.pem
+
+# A-Stockit artifacts
+skills/astockit/_artifacts/
+!skills/astockit/_artifacts/.gitkeep
+skills/astockit/_artifacts/**/*
+!skills/astockit/_artifacts/manifests/.gitkeep
+
+# Session state
+.session/
+*.session
+session_*.json
+
+# Generated documentation
+site/
+.mkdocs_cache/
+
+# Review documents
+DOCUMENTATION_REVIEW_*.md
+PHASE*.md
+*_PROGRESS.md
+*_REVIEW.md
+
+# Claude/Codex local state
+.claude/
+.codex/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+logs/
